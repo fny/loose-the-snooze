@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AC05AB81FAFBE0000C5163F /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC05AB71FAFBE0000C5163F /* button.png */; };
 		D0301B751F97D8AE00D90C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0301B741F97D8AE00D90C7F /* AppDelegate.swift */; };
 		D0301B771F97D8AE00D90C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0301B761F97D8AE00D90C7F /* ViewController.swift */; };
 		D0301B7A1F97D8AE00D90C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0301B781F97D8AE00D90C7F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8AC05AB71FAFBE0000C5163F /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = ../../../Downloads/button.png; sourceTree = "<group>"; };
 		D0301B711F97D8AD00D90C7F /* LoseTheSnooze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoseTheSnooze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0301B741F97D8AE00D90C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0301B761F97D8AE00D90C7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				D0301B741F97D8AE00D90C7F /* AppDelegate.swift */,
 				D0301B761F97D8AE00D90C7F /* ViewController.swift */,
 				D0301B781F97D8AE00D90C7F /* Main.storyboard */,
+				8AC05AB71FAFBE0000C5163F /* button.png */,
 				D0301B7B1F97D8AE00D90C7F /* Assets.xcassets */,
 				D0301B7D1F97D8AE00D90C7F /* LaunchScreen.storyboard */,
 				D0301B801F97D8AE00D90C7F /* Info.plist */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0301B7F1F97D8AE00D90C7F /* LaunchScreen.storyboard in Resources */,
+				8AC05AB81FAFBE0000C5163F /* button.png in Resources */,
 				D0301B7C1F97D8AE00D90C7F /* Assets.xcassets in Resources */,
 				D0301B7A1F97D8AE00D90C7F /* Main.storyboard in Resources */,
 			);
