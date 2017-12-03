@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8AC05AB81FAFBE0000C5163F /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC05AB71FAFBE0000C5163F /* button.png */; };
+		8A13875A1FD34D8100DFCFDA /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A1387591FD34D8100DFCFDA /* button.png */; };
+		8A1387621FD3D0FF00DFCFDA /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1387611FD3D0FF00DFCFDA /* 1.mp3 */; };
+		8A2B66DC1FB71086008B3E7C /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B66DB1FB71086008B3E7C /* SignInVC.swift */; };
+		8A2B66DE1FB710B0008B3E7C /* SetTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B66DD1FB710B0008B3E7C /* SetTimeVC.swift */; };
+		8A2B66E01FB710BE008B3E7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B66DF1FB710BE008B3E7C /* HomeViewController.swift */; };
 		D0301B751F97D8AE00D90C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0301B741F97D8AE00D90C7F /* AppDelegate.swift */; };
-		D0301B771F97D8AE00D90C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0301B761F97D8AE00D90C7F /* ViewController.swift */; };
 		D0301B7A1F97D8AE00D90C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0301B781F97D8AE00D90C7F /* Main.storyboard */; };
 		D0301B7C1F97D8AE00D90C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0301B7B1F97D8AE00D90C7F /* Assets.xcassets */; };
 		D0301B7F1F97D8AE00D90C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0301B7D1F97D8AE00D90C7F /* LaunchScreen.storyboard */; };
@@ -35,10 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8AC05AB71FAFBE0000C5163F /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = ../../../Downloads/button.png; sourceTree = "<group>"; };
+		8A1387591FD34D8100DFCFDA /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		8A1387611FD3D0FF00DFCFDA /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = SOURCE_ROOT; };
+		8A2B66DB1FB71086008B3E7C /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		8A2B66DD1FB710B0008B3E7C /* SetTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeVC.swift; sourceTree = "<group>"; };
+		8A2B66DF1FB710BE008B3E7C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D0301B711F97D8AD00D90C7F /* LoseTheSnooze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoseTheSnooze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0301B741F97D8AE00D90C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0301B761F97D8AE00D90C7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0301B791F97D8AE00D90C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0301B7B1F97D8AE00D90C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0301B7E1F97D8AE00D90C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,12 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				D0301B741F97D8AE00D90C7F /* AppDelegate.swift */,
-				D0301B761F97D8AE00D90C7F /* ViewController.swift */,
 				D0301B781F97D8AE00D90C7F /* Main.storyboard */,
-				8AC05AB71FAFBE0000C5163F /* button.png */,
+				8A1387591FD34D8100DFCFDA /* button.png */,
+				8A1387611FD3D0FF00DFCFDA /* 1.mp3 */,
 				D0301B7B1F97D8AE00D90C7F /* Assets.xcassets */,
 				D0301B7D1F97D8AE00D90C7F /* LaunchScreen.storyboard */,
 				D0301B801F97D8AE00D90C7F /* Info.plist */,
+				8A2B66DB1FB71086008B3E7C /* SignInVC.swift */,
+				8A2B66DD1FB710B0008B3E7C /* SetTimeVC.swift */,
+				8A2B66DF1FB710BE008B3E7C /* HomeViewController.swift */,
 			);
 			path = LoseTheSnooze;
 			sourceTree = "<group>";
@@ -236,9 +245,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0301B7F1F97D8AE00D90C7F /* LaunchScreen.storyboard in Resources */,
-				8AC05AB81FAFBE0000C5163F /* button.png in Resources */,
+				8A13875A1FD34D8100DFCFDA /* button.png in Resources */,
 				D0301B7C1F97D8AE00D90C7F /* Assets.xcassets in Resources */,
 				D0301B7A1F97D8AE00D90C7F /* Main.storyboard in Resources */,
+				8A1387621FD3D0FF00DFCFDA /* 1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0301B771F97D8AE00D90C7F /* ViewController.swift in Sources */,
+				8A2B66DE1FB710B0008B3E7C /* SetTimeVC.swift in Sources */,
+				8A2B66DC1FB71086008B3E7C /* SignInVC.swift in Sources */,
 				D0301B751F97D8AE00D90C7F /* AppDelegate.swift in Sources */,
+				8A2B66E01FB710BE008B3E7C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYQ4BKMB6G;
 				INFOPLIST_FILE = LoseTheSnooze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.dukecatalyst.LoseTheSnooze;
@@ -445,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYQ4BKMB6G;
 				INFOPLIST_FILE = LoseTheSnooze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.dukecatalyst.LoseTheSnooze;
