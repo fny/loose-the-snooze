@@ -51,7 +51,6 @@
         <!--Time Set-->
         <scene sceneID="P48-0M-Pa8">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Go7-G6-qj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Time Set" id="2is-u1-Mg5" customClass="SetTimeVC" customModule="LoseTheSnooze" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jaz-tt-nBa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -90,6 +89,7 @@
                         <outlet property="timePickerTxt" destination="Sj4-rf-DE4" id="ai0-ep-Rx6"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Go7-G6-qj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="560.5" y="37.5"/>
         </scene>
@@ -135,6 +135,18 @@
                                     <segue destination="2is-u1-Mg5" kind="modal" modalTransitionStyle="flipHorizontal" id="zSw-Ah-IL9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KBK-eh-kDx">
+                                <rect key="frame" x="273" y="617" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9296838641166687" green="0.93171435594558716" blue="0.78984665870666504" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="camera">
+                                    <color key="titleColor" red="0.33937925100326538" green="0.38641458749771118" blue="0.48607796430587769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5h1-q3-cmw" kind="modal" id="Uqi-Uu-zp2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.7803921568627451" green="0.63529411764705879" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -147,11 +159,95 @@
             </objects>
             <point key="canvasLocation" x="1062.5" y="37.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="DSL-YA-ZiD">
+            <objects>
+                <viewController id="5h1-q3-cmw" customClass="ViewController" customModule="VisionSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BqO-J7-p4o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="75O-1b-N2r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZGF-vb-ZX0" appends="YES" id="Gas-wb-dUv"/>
+                                </connections>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="BEB-me-zto">
+                                <rect key="frame" x="16" y="576.5" width="343" height="50.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="206-ZY-t7G" userLabel="Threshhold">
+                                        <rect key="frame" x="0.0" y="-30" width="343" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.25" minValue="0.0" maxValue="1" id="Eg1-fc-mUf">
+                                        <rect key="frame" x="-2" y="-9.5" width="347" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="sliderValueChangedWithSlider:" destination="5h1-q3-cmw" eventType="valueChanged" id="4Xt-SO-XAM"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zMC-8c-mjk">
+                                <rect key="frame" x="16" y="26" width="343" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find me a toilet! 💩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HHf-9p-jX0">
+                                <rect key="frame" x="112" y="323" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.34034459288368502" blue="0.36814811373814338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pId-0m-nkq">
+                                <rect key="frame" x="275" y="617" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92968386410000003" green="0.93171435589999996" blue="0.78984665870000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.33937925099999999" green="0.38641458750000002" blue="0.4860779643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="io0-Fk-hPu" kind="modal" id="XXQ-m7-rWb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32156862749999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="75O-1b-N2r" id="uSb-Pt-gYT"/>
+                        <outlet property="resultView" destination="zMC-8c-mjk" id="pnq-TU-H5n"/>
+                        <outlet property="threshholdLabel" destination="206-ZY-t7G" id="Uec-ec-LyJ"/>
+                        <outlet property="threshholdSlider" destination="Eg1-fc-mUf" id="JAU-x8-opo"/>
+                        <outlet property="thresholdStackView" destination="BEB-me-zto" id="o2F-oq-i1Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hBc-xu-Zoa" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZGF-vb-ZX0">
+                    <connections>
+                        <action selector="userTappedWithSender:" destination="5h1-q3-cmw" id="FtQ-sK-Cca"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1533.5" y="37.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="button.png" width="1728" height="377"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7hO-j2-daY"/>
+        <segue reference="XXQ-m7-rWb"/>
+        <segue reference="zSw-Ah-IL9"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -24,16 +24,6 @@ class HomeViewController: UIViewController {
         
         wakeUpTime.text = SetTimeVC.GlobalVariable.myString
         onOff.setOn(false, animated: true)
-
-        do
-        {
-            let audioPath = Bundle.main.path(forResource: "1", ofType: ".mp3")
-            try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
-        }
-        catch
-        {
-            //ERROR
-        }
     }
     
     @IBAction func alarmOnOff(_ sender: UISwitch) {
@@ -53,7 +43,7 @@ class HomeViewController: UIViewController {
             timer.invalidate()
             seconds = 30
             
-            audioPlayer.stop()
+            Alarm.sharedInstance.stop()
            
         }
     }
@@ -66,7 +56,7 @@ class HomeViewController: UIViewController {
         if (seconds <= 0)
         {
             timer.invalidate()
-            audioPlayer.play()
+            Alarm.sharedInstance.start()
         }
     }
 

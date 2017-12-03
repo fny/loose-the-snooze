@@ -16,8 +16,9 @@
 		D0301B7A1F97D8AE00D90C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0301B781F97D8AE00D90C7F /* Main.storyboard */; };
 		D0301B7C1F97D8AE00D90C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0301B7B1F97D8AE00D90C7F /* Assets.xcassets */; };
 		D0301B7F1F97D8AE00D90C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0301B7D1F97D8AE00D90C7F /* LaunchScreen.storyboard */; };
-		D0301B8A1F97D8AE00D90C7F /* LoseTheSnoozeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0301B891F97D8AE00D90C7F /* LoseTheSnoozeTests.swift */; };
-		D0301B951F97D8AE00D90C7F /* LoseTheSnoozeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0301B941F97D8AE00D90C7F /* LoseTheSnoozeUITests.swift */; };
+		D0F205701FD45D8B004B873A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F2056F1FD45D8B004B873A /* CameraViewController.swift */; };
+		D0F205751FD46946004B873A /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F205741FD46946004B873A /* Alarm.swift */; };
+		D0F205771FD47832004B873A /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D0F205761FD47832004B873A /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +51,10 @@
 		D0301B7E1F97D8AE00D90C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0301B801F97D8AE00D90C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0301B851F97D8AE00D90C7F /* LoseTheSnoozeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoseTheSnoozeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0301B891F97D8AE00D90C7F /* LoseTheSnoozeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseTheSnoozeTests.swift; sourceTree = "<group>"; };
-		D0301B8B1F97D8AE00D90C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0301B901F97D8AE00D90C7F /* LoseTheSnoozeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoseTheSnoozeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0301B941F97D8AE00D90C7F /* LoseTheSnoozeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseTheSnoozeUITests.swift; sourceTree = "<group>"; };
-		D0301B961F97D8AE00D90C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F2056F1FD45D8B004B873A /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		D0F205741FD46946004B873A /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		D0F205761FD47832004B873A /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				D0301B731F97D8AD00D90C7F /* LoseTheSnooze */,
-				D0301B881F97D8AE00D90C7F /* LoseTheSnoozeTests */,
-				D0301B931F97D8AE00D90C7F /* LoseTheSnoozeUITests */,
 				D0301B721F97D8AD00D90C7F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,36 +103,21 @@
 		D0301B731F97D8AD00D90C7F /* LoseTheSnooze */ = {
 			isa = PBXGroup;
 			children = (
+				D0F2056F1FD45D8B004B873A /* CameraViewController.swift */,
 				D0301B741F97D8AE00D90C7F /* AppDelegate.swift */,
 				D0301B781F97D8AE00D90C7F /* Main.storyboard */,
 				8A1387591FD34D8100DFCFDA /* button.png */,
 				8A1387611FD3D0FF00DFCFDA /* 1.mp3 */,
 				D0301B7B1F97D8AE00D90C7F /* Assets.xcassets */,
+				D0F205761FD47832004B873A /* SqueezeNet.mlmodel */,
 				D0301B7D1F97D8AE00D90C7F /* LaunchScreen.storyboard */,
 				D0301B801F97D8AE00D90C7F /* Info.plist */,
 				8A2B66DB1FB71086008B3E7C /* SignInVC.swift */,
 				8A2B66DD1FB710B0008B3E7C /* SetTimeVC.swift */,
 				8A2B66DF1FB710BE008B3E7C /* HomeViewController.swift */,
+				D0F205741FD46946004B873A /* Alarm.swift */,
 			);
 			path = LoseTheSnooze;
-			sourceTree = "<group>";
-		};
-		D0301B881F97D8AE00D90C7F /* LoseTheSnoozeTests */ = {
-			isa = PBXGroup;
-			children = (
-				D0301B891F97D8AE00D90C7F /* LoseTheSnoozeTests.swift */,
-				D0301B8B1F97D8AE00D90C7F /* Info.plist */,
-			);
-			path = LoseTheSnoozeTests;
-			sourceTree = "<group>";
-		};
-		D0301B931F97D8AE00D90C7F /* LoseTheSnoozeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D0301B941F97D8AE00D90C7F /* LoseTheSnoozeUITests.swift */,
-				D0301B961F97D8AE00D90C7F /* Info.plist */,
-			);
-			path = LoseTheSnoozeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F205701FD45D8B004B873A /* CameraViewController.swift in Sources */,
 				8A2B66DE1FB710B0008B3E7C /* SetTimeVC.swift in Sources */,
 				8A2B66DC1FB71086008B3E7C /* SignInVC.swift in Sources */,
+				D0F205771FD47832004B873A /* SqueezeNet.mlmodel in Sources */,
 				D0301B751F97D8AE00D90C7F /* AppDelegate.swift in Sources */,
+				D0F205751FD46946004B873A /* Alarm.swift in Sources */,
 				8A2B66E01FB710BE008B3E7C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0301B8A1F97D8AE00D90C7F /* LoseTheSnoozeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0301B951F97D8AE00D90C7F /* LoseTheSnoozeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,12 +426,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VYQ4BKMB6G;
+				DEVELOPMENT_TEAM = 9R9RTH4HE6;
 				INFOPLIST_FILE = LoseTheSnooze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.dukecatalyst.LoseTheSnooze;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farazyashar.LoseTheSnooze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,12 +443,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VYQ4BKMB6G;
+				DEVELOPMENT_TEAM = 9R9RTH4HE6;
 				INFOPLIST_FILE = LoseTheSnooze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.dukecatalyst.LoseTheSnooze;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farazyashar.LoseTheSnooze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
