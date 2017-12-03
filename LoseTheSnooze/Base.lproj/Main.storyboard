@@ -167,6 +167,9 @@
                                         <state key="normal" title="SUBMIT">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="xsA-GM-9TV" kind="modal" id="3Bv-jp-d33"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -204,6 +207,13 @@
                                 <rect key="frame" x="113" y="233" width="258" height="323"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYQ-2F-GxU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="UfP-iA-QIK" kind="modal" id="kr4-ug-bac"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50123375654220581" green="0.63333088159561157" blue="0.75825232267379761" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="2rz-Pu-Zj8"/>

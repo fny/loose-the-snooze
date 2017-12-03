@@ -18,8 +18,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         present(imagePicker, animated: true, completion: nil)
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        imagePicker.dismissViewControllerAnimated(true, completion: nil)
-        imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        imagePicker.dismiss(animated: true, completion: nil)
+      //  imagePicker.image = info[UIImagePickerControllerOriginalImage] as? UIImage
     }
 
     override func viewDidLoad() {
