@@ -148,12 +148,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
       .map({ "\($0.identifier) \(String(format:"%.2f", $0.confidence))" })
         .joined(separator: "\n")
 
-    DispatchQueue.main.async {
-        self.resultView.text = classifications
-    }
+    // Use this to debug output
+    //
+    //    DispatchQueue.main.async {
+    //        self.resultView.text = classifications
+    //    }
     
     if  classifications.range(of: "toilet") != nil ||
-        classifications.range(of: "computer keypad") != nil ||
+        classifications.range(of: "computer keyboard") != nil ||
         classifications.range(of: "macbook") != nil {
         Alarm.sharedInstance.audioPlayer.stop()
         DispatchQueue.main.async {
